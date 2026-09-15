@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Илья Гросул — Fullstack-разработчик</title>
+  <meta name="description" content="Портфолио Ильи Гросула. Fullstack-разработчик: React, Django, PostgreSQL, HTML/CSS/JS.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hello">Кратко</a></li>
+      <li><a href="#skills">Навыки</a></li>
+      <li><a href="#work">Работы</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Меню">☰</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Parallax -->
+  <section class="parallax-intro" id="scene">
+    <div class="layer-bg" id="bg"></div>
+    <div class="parallax-content">
+      <h1>Kiyoshice</h1>
+      <div class="sub">Илья Гросул · Fullstack</div>
+    </div>
+    <div class="layer-character" id="eren">
+      <img src="./static/img/eren.png" alt="Character">
+    </div>
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section class="hero" id="hello">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="greeting">Привет, я</span>
+        <h1>Гросул Илья<span>.</span></h1>
+        <p class="hero-sub">Fullstack-разработчик. Веду проект от интерфейса на React до базы данных на PostgreSQL — спокойно и внимательно к деталям.</p>
+        <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">Смотреть работы</a>
+            <a href="#contact" class="btn btn-ghost">Написать</a>
+            <a href="https://github.com/seishiroice" target="_blank" rel="noopener" class="btn btn-ghost">Github</a>
+            <a href="" target="_blank" rel="noopener" class="btn btn-ghost">Bihance</a>
+        </div>
+        <div class="hero-meta">
+          <div><span class="num">2+</span><span class="label">года опыта</span></div>
+          <div><span class="num">6+</span><span class="label">технологий</span></div>
+          <div><span class="num">Full</span><span class="label">цикл — UI → БД</span></div>
+        </div>
+      </div>
+      <div class="stack-visual" aria-hidden="true">
+        <div class="stack-layer"><span class="tech">PostgreSQL</span><span class="role">database</span></div>
+        <div class="stack-layer"><span class="tech">Django / Node</span><span class="role">backend</span></div>
+        <div class="stack-layer"><span class="tech">React / JavaScript</span><span class="role">frontend</span></div>
+        <div class="stack-layer"><span class="tech">HTML / CSS / Figma</span><span class="role">interface</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills with progress bars -->
+  <section class="skills-section" id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="section-tag">// навыки</span>
+        <h2>Технологии, с которыми я работаю</h2>
+        <p>Стек разделён на три слоя — интерфейс, сервер и данные. Плюс дизайн.</p>
+      </div>
+
+      <div class="skills-groups">
+        <div class="skill-card reveal">
+          <span class="layer-index">слой 01</span>
+          <h3>Frontend</h3>
+          <p class="group-desc">Интерфейс и то, что видит пользователь</p>
+          <div class="skill-list">
+            <div class="skill-row">
+              <div class="top"><span>HTML / CSS</span><span>уверенно</span></div>
+              <div class="bar"><div class="bar-fill" data-w="92%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="top"><span>JavaScript</span><span>уверенно</span></div>
+              <div class="bar"><div class="bar-fill" data-w="85%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="top"><span>React</span><span>рабочий уровень</span></div>
+              <div class="bar"><div class="bar-fill" data-w="78%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="top"><span>SASS / Bootstrap</span><span>уверенно</span></div>
+              <div class="bar"><div class="bar-fill" data-w="80%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="layer-index">слой 02</span>
+          <h3>Backend</h3>
+          <p class="group-desc">Логика, API и серверная часть</p>
+          <div class="skill-list">
+            <div class="skill-row">
+              <div class="top"><span>Django / DRF</span><span>рабочий уровень</span></div>
+              <div class="bar"><div class="bar-fill" data-w="80%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="top"><span>Node.js / PHP</span><span>базовый+</span></div>
+              <div class="bar"><div class="bar-fill" data-w="65%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="top"><span>PostgreSQL</span><span>рабочий уровень</span></div>
+              <div class="bar"><div class="bar-fill" data-w="75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <span class="layer-index">слой 03</span>
+          <h3>Design & Tools</h3>
+          <p class="group-desc">UI/UX и инструменты</p>
+          <div class="skill-list">
+            <div class="skill-row">
+              <div class="top"><span>Figma</span><span>уверенно</span></div>
+              <div class="bar"><div class="bar-fill" data-w="85%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="top"><span>Photoshop / AI</span><span>рабочий уровень</span></div>
+              <div class="bar"><div class="bar-fill" data-w="70%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="top"><span>Wireframing / UX</span><span>рабочий уровень</span></div>
+              <div class="bar"><div class="bar-fill" data-w="72%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="wrap pad portfolio-section" id="work">
+    <div class="section-head reveal">
+      <h2>Проекты<span>.</span></h2>
+      <p>Сайты, дизайн-макеты и fullstack-приложения.</p>
+    </div>
+    <div class="filter-row reveal">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="website">Веб-сайты</button>
+      <button class="filter-btn" data-filter="design">Дизайн</button>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card reveal" data-category="website">
+        <div class="project-thumb thumb-1"><span class="glyph"><img src="./static/img/Mussi Cafe.png" alt=""></span></div>
+        <div class="project-body">
+          <h3>Mussi Cafe</h3>
+          <p>Сайт кофейни. Каталог и история.</p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://seishiroice.github.io/MussiCafe/" target="_blank" rel="noopener">Демо →</a>
+            <a href="https://github.com/seishiroice" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="website">
+        <div class="project-thumb thumb-2"><span class="glyph">02</span></div>
+        <div class="project-body">
+          <h3>Ася Проводник</h3>
+          <p>Сайт визитка психолога и её услуг.</p>
+          <div class="project-tags">
+            <span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://asya-2026.github.io/Asya-Provodnik/" target="_blank" rel="noopener">Демо →</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="design">
+        <div class="project-thumb thumb-3"><span class="glyph"><img src="./static/img/FH.png" alt=""></span></div>
+        <div class="project-body">
+          <h3>Four Chees</h3>
+          <p>Дизайн лендинга в Figma. Типографика и сетка.</p>
+          <div class="project-tags">
+            <span class="ptag">Figma</span><span class="ptag">UI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.figma.com/design/B8nyE7Gb9wHz1ylVWAseXd/Дизайн_для_верстки_Тестовый_лендинг?node-id=0-1&p=f&t=Ugb7ARJ49pVl05fF-0" target="_blank" rel="noopener">Figma →</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="design">
+        <div class="project-thumb thumb-4"><span class="glyph">04</span></div>
+        <div class="project-body">
+          <h3>Reu Shop</h3>
+          <p>Интернет-магазин: каталог, корзина, оформление заказа.</p>
+          <div class="project-tags">
+            <span class="ptag">React</span><span class="ptag">JS</span><span class="ptag">Backend</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/liquiorra/ReuShop" target="_blank" rel="noopener">Код →</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="design">
+        <div class="project-thumb thumb-5"><span class="glyph">05</span></div>
+        <div class="project-body">
+          <h3>Будущий проект</h3>
+          <p>Create soon...</p>
+          <div class="project-tags">
+            <span class="ptag"></span><span class="ptag"></span>
+          </div>
+          <div class="project-links">
+            <a href="" target="_blank" rel="noopener"> →</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" data-category="design">
+        <div class="project-thumb thumb-4"><span class="glyph">04</span></div>
+        <div class="project-body">
+          <h3>Будущий проект</h3>
+          <p>Create soon...</p>
+          <div class="project-tags">
+            <span class="ptag"></span><span class="ptag"></span>
+          </div>
+          <div class="project-links">
+            <a href="" target="_blank" rel="noopener"> →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="wrap pad" style="padding-top:0;">
+    <div class="cta reveal">
+      <h2>Есть идея проекта?</h2>
+      <p>Напишите — обсудим задачу и сроки.</p>
+      <div class="cta-actions">
+        <a href="mailto:seishiroice@gmail.com" class="btn btn-primary">Написать на почту</a>
+        <a href="https://t.me/seishiroice" target="_blank" rel="noopener" class="btn btn-ghost">Telegram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Илья Гросул</div>
+        <p>Fullstack-разработчик. От интерфейса до базы данных.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#hello">Кратко</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#work">Работы</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="mailto:ikhasegava@gmail.com">seishiroce@gmail.com</a></li>
+          <li><a href="tel:+79162877305">+7 (916) 287-73-05</a></li>
+          <li><a href="https://t.me/seishiroice" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://github.com/seishiroice" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Илья Гросул</span>
+      <div class="socials">
+        <a href="https://github.com/seishiroice" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://t.me/seishiroice" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.figma.com/" target="_blank" rel="noopener" aria-label="Figma"><i class="fa-brands fa-figma"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./static/script.js"></script>
+</body>
+</html>
